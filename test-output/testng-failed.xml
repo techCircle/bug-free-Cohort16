@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel Testing Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Parallel Tests(failed)">
+    <classes>
+      <class name="TestNG_Day2.TestParallel">
+        <methods>
+          <include name="method2"/>
+        </methods>
+      </class> <!-- TestNG_Day2.TestParallel -->
+    </classes>
+  </test> <!-- Parallel Tests(failed) -->
+  <test thread-count="5" parallel="methods" name="Parallel Tests2(failed)">
+    <classes>
+      <class name="TestNG_Day2.ParameterizedTest">
+        <methods>
+          <include name="parameterTest"/>
+        </methods>
+      </class> <!-- TestNG_Day2.ParameterizedTest -->
+    </classes>
+  </test> <!-- Parallel Tests2(failed) -->
+</suite> <!-- Failed suite [Parallel Testing Suite] -->
